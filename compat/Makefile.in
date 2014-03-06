@@ -79,13 +79,13 @@ POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
 subdir = compat
-DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am fdopendir.c \
-	inet_pton.c strnlen.c strtok_r.c swab.c flockfile.c tdestroy.c \
-	rewind.c getpid.c strndup.c setenv.c gmtime_r.c lldiv.c poll.c \
-	asprintf.c strsep.c strtof.c vasprintf.c nrand48.c getdelim.c \
-	strlcpy.c posix_memalign.c strverscmp.c strcasestr.c strtoll.c \
-	localtime_r.c atof.c dirfd.c fsync.c strdup.c atoll.c \
-	strcasecmp.c $(top_srcdir)/autotools/depcomp
+DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am strverscmp.c \
+	fsync.c strtok_r.c strndup.c strsep.c getpid.c strtof.c \
+	strlcpy.c tdestroy.c getdelim.c strcasestr.c strnlen.c atoll.c \
+	inet_pton.c rewind.c nrand48.c strdup.c strcasecmp.c \
+	vasprintf.c gmtime_r.c swab.c localtime_r.c fdopendir.c poll.c \
+	lldiv.c asprintf.c dirfd.c strtoll.c posix_memalign.c atof.c \
+	setenv.c flockfile.c $(top_srcdir)/autotools/depcomp
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/dolt.m4 \
 	$(top_srcdir)/m4/flags.m4 $(top_srcdir)/m4/gettext.m4 \
