@@ -44,7 +44,8 @@ vlc_static_CFLAGS = $(AM_CFLAGS) \
 	-DTOP_SRCDIR=\"$$(cd "$(top_srcdir)"; pwd)\" \
 	$(NULL)
 vlc_static_DEPENDENCIES = $(vlc_DEPENDENCIES)
-vlc_static_LDADD = $(vlc_LDADD)
+vlc_static_LDADD = $(vlc_LDADD) \
+	../compat/libcompat.la
 vlc_static_LDFLAGS = $(vlc_LDFLAGS)
 
 if HAVE_WIN32
