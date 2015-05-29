@@ -341,7 +341,7 @@ int InitVideoDec( decoder_t *p_dec, AVCodecContext *p_context,
         p_context->flags |= CODEC_FLAG_GRAY;
 
     /* ***** Output always the frames ***** */
-    p_context->flags |= CODEC_FLAG_OUTPUT_CORRUPT;
+//    p_context->flags |= CODEC_FLAG_OUTPUT_CORRUPT;
 
     i_val = var_CreateGetInteger( p_dec, "avcodec-skiploopfilter" );
     if( i_val >= 4 ) p_context->skip_loop_filter = AVDISCARD_ALL;
